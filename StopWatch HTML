@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dual Stopwatch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .stopwatch {
+            margin: 20px;
+        }
+        .time {
+            font-size: 2em;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dual Stopwatch</h1>
+    <div id="stopwatch1" class="stopwatch">
+        <div class="time" id="time1">00:00:00</div>
+        <button onclick="startStopwatch(1)">Start</button>
+        <button onclick="stopStopwatch(1)">Stop</button>
+        <button onclick="resetStopwatch(1)">Reset</button>
+    </div>
+    <div id="stopwatch2" class="stopwatch">
+        <div class="time" id="time2">00:00:00</div>
+        <button onclick="startStopwatch(2)">Start</button>
+        <button onclick="stopStopwatch(2)">Stop</button>
+        <button onclick="resetStopwatch(2)">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
